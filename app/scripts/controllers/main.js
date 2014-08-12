@@ -14,4 +14,13 @@ angular.module('pointmapApp')
       'AngularJS',
       'Karma'
     ];
+
+    $scope.map = {
+	    center: {
+	        latitude: 45,
+	        longitude: -73
+	    },
+	    zoom: 8
+	};
+	
   });

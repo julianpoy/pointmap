@@ -1,5 +1,7 @@
 'use strict';
 
+var apiBase = 'http://localhost:8888/';
+
 angular.module('pointmapApp')
   .factory('Points', ['$resource', function($resource) {
 
@@ -8,7 +10,7 @@ angular.module('pointmapApp')
             query: { 
                 method: 'GET', 
                 params: {}, 
-                isArray: false 
+                isArray: true 
             },
             get: { 
                 method: 'GET', 

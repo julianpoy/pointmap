@@ -8,7 +8,7 @@
  * Controller of the pointmapApp
  */
 angular.module('pointmapApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, Points) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -22,5 +22,7 @@ angular.module('pointmapApp')
 	    },
 	    zoom: 8
 	};
-	
+
+	$scope.mapMarkers = Points.query();
+
   });

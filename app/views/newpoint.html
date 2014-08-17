@@ -1,0 +1,52 @@
+<div class="jumbotron">
+	<div id="locationbox" class="locationbox">
+		Trying to track your location...
+	</div><br />
+	<div>
+		<form name="newpoint-form" ng-submit="savePoint()">
+			<input
+				type="text"
+				class="textfield"
+				ng-model="newpoint.name"
+				placeholder="Name"></input><br />
+			<input
+				type="text"
+				class="textfield"
+				ng-model="newpoint.address"
+				placeholder="Address"></input><br />
+			<input
+				type="text"
+				class="textfield"
+				ng-model="newpoint.city"
+				placeholder="City"></input><br />
+			<input
+				type="text"
+				class="textfield"
+				ng-model="newpoint.state"
+				placeholder="State"></input><br />
+			<input
+				type="text"
+				class="textfield"
+				ng-model="newpoint.zip"
+				placeholder="Zip"></input><br />
+			<input
+				type="text"
+				class="textfield"
+				ng-model="newpoint.db_link"
+				placeholder="DB Link (optional)"></input><br />
+			<textarea
+				class="textarea"
+				ng-model="newpoint.details"
+				placeholder="Details (up to 4000 char)"></textarea><br />
+			<textarea
+				class="textarea"
+				ng-model="newpoint.notes"
+				placeholder="Notes (up to 4000 char)"></textarea><br />
+			<input
+				type="submit"
+				value="Save"
+				class="formbutton">
+		</form>
+		
+	</div>
+</div>

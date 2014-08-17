@@ -30,6 +30,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/newpoint', {
+        templateUrl: 'views/newpoint.html',
+        controller: 'NewpointCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

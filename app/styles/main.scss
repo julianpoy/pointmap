@@ -70,6 +70,23 @@ body {
   }
 }
 
+.textfield, .textarea, .formbutton {
+  border: 1px solid grey;
+  margin: 3px;
+  padding: 3px;
+  border-radius: 7px;
+}
+
+.formbutton {
+  background-color: #2ecc71;
+}
+
+.locationbox {
+  border-radius: 7px;
+  background-color: #3498db;
+  padding: 10px;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

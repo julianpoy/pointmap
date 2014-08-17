@@ -34,6 +34,10 @@ angular
         templateUrl: 'views/newpoint.html',
         controller: 'NewpointCtrl'
       })
+      .when('/viewpoint', {
+        templateUrl: 'views/viewpoint.html',
+        controller: 'ViewpointCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
